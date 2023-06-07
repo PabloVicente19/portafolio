@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@700&family=Open+Sans:wght@400;600&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -8,19 +8,21 @@
 	font-family: "Open Sans", sans-serif;
 }
 :root {
-	--dark: #23272f;
+	--gray: #343434;
 	--blue: #0b6989;
 	--white: #f6f7f9;
 	--yellow: #fbd04d;
+  --violet: #8B0BFC;
+  --FontOpenSans:"Open Sans", sans-serif;
+  --FontGeologica:'Open Sans', sans-serif;
 }
 body {
 	max-width: 1024px;
 	margin: 0 auto;
-	background-color: var(--dark);
+	background-color: var(--gray);
 }
 
 .navbar-content {
-	background-color: var(--blue);
 	height: 80px;
 	display: flex;
 	align-items: center;
@@ -28,6 +30,7 @@ body {
 	padding: 0 20px;
 	border-end-end-radius: 25px;
 	border-end-start-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-logo {
 	display: inline;
@@ -40,7 +43,7 @@ body {
 	gap: 30px;
 }
 .navbar-list-link {
-	position: relative;
+  position: relative;
 	font-weight: 600;
 	font-size: 1.2rem;
 	color: var(--white);
@@ -60,9 +63,46 @@ body {
 }
 
 /* Hero */
-.hero-container {
-	margin-top: 80px;
-	min-height: 500px;
+.hero-container{
+  height: calc(100vh - 80px);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.hero-title{
+  font-size: 3.5rem;
+  font-weight: 900;
+  font-family: var(--FontGeologica);
+}
+.hero-prof{
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+
+  background: #27C9CF;
+  background: linear-gradient(to left, #0B6989 7%, #00FF00 36%, #FBD04D 95%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.hero-btns-container{
+  display: flex;
+  gap: 40px;
+}
+.hero-btn{
+  color: var(--white);
+  font-weight: 900;
+  font-size: 1.2rem;
+  background-color: var(--blue);
+  padding: .7rem 3rem;
+  border: 0;
+  border-radius: 1rem;
+}
+/* .hero-container {
+	min-height: calc(100vh - 80px);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -88,6 +128,7 @@ body {
 	border: 1px solid #000;
 	padding: 0.6rem 2rem;
 	border-radius: 8px;
+  border: none;
 }
 .hero-links-content a:first-child {
 	background-color: var(--yellow);
@@ -116,7 +157,7 @@ body {
 	font-size: 1.3rem;
 	border-radius: 10px;
 	color: var(--white);
-}
+} */
 /* Seccion de las habilidades */
 .skills-content {
 	width: 650px;
@@ -131,6 +172,7 @@ body {
 	border-radius: 1rem;
 }
 .skills-title {
+  text-align: center;
 	flex-basis: 100%;
 	font-size: 1.5rem;
 	/* color: var(--white); */
