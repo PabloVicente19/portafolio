@@ -8,61 +8,95 @@
 	scroll-behavior: smooth;
 }
 :root {
-	--gray: #242424;
-	--blue: #0b6989;
-	--white: #f6f7f9;
+	--darkPurple: #301a4b;
+	--blue: #2292a4;
+	--white: #f5efed;
 	--yellow: #fbd04d;
-	--violet: #8b0bfc;
+	--orange: #fa7921;
+	--black: #002500;
 	--FontOpenSans: "Open Sans", sans-serif;
-	--FontGeologica: "Open Sans", sans-serif;
+	--FontGeologica: "Geologica", sans-serif;
+	--max: 1024px;
+	--marginAuto: 0 auto;
 }
 body {
-	max-width: 1024px;
+	max-width: 1440px;
 	margin: 0 auto;
-	background-color: var(--gray);
+	background-color: var(--black);
 }
 
 .navbar-content {
+	position: relative;
 	height: 80px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 0 20px;
-	border-end-end-radius: 25px;
-	border-end-start-radius: 25px;
-	background-color: rgba(255, 255, 255, 0.1);
 }
 .navbar-logo {
 	display: inline;
 	font-size: 2rem;
+	color: var(--white);
+	font-family: var(--FontOpenSans);
+}
+.bars-menu-content {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+.bars-menu {
+	background-color: var(--white);
+	width: 35px;
+	height: 3px;
+	margin: 3px;
 }
 .navbar-list {
+	width: 80%;
+	background-color: var(--white);
+	height: calc(100vh - 80px);
+	position: absolute;
+	top: 80px;
+	left: 0;
 	display: flex;
-	justify-content: flex-end;
-	align-items: center;
+	flex-direction: column;
 	gap: 30px;
+	visibility: hidden;
+	transform: translateX(-100%);
+	transition: 0.3s transform;
+	border-top-right-radius: 2rem;
+	border-bottom-right-radius: 2rem;
 }
+
 .navbar-list-link {
 	position: relative;
 	font-weight: 600;
 	font-size: 1.2rem;
 	color: var(--white);
-	font-family: var(--FontOpenSans);
+	font-family: var(--FontGeologica);
 }
 .navbar-list-link::before {
 	position: absolute;
-	bottom: -2px;
+	bottom: -5px;
 	content: "";
 	display: block;
 	width: 0;
-	height: 3px;
+	height: 4px;
 	background-color: var(--yellow);
 	transition: all 0.3s;
 }
 .navbar-list-link:hover::before {
 	width: 100%;
 }
-
+.navbar-list-link:hover {
+	color: var(--blue);
+	transition: 0.2s color;
+}
+/* Animacion que cierra o muestra el menu  */
+.show-menu {
+	visibility: visible;
+	transform: translateX(0%);
+	transition: 0.3s transform;
+}
 /* Hero */
 .hero-container {
 	height: calc(100vh - 80px);
@@ -198,4 +232,20 @@ body {
 	width: 100%;
 	height: 100px;
 	cursor: pointer;
+}
+@media screen and (min-width: 700px) {
+	.navbar-list {
+		height: auto;
+		width: auto;
+		position: initial;
+		flex-direction: row;
+		gap: 10px;
+		transform: none;
+		color: var(--white);
+		background-color: initial;
+		visibility: visible;
+	}
+	.bars-menu-content {
+		display: none;
+	}
 }
