@@ -50,9 +50,13 @@ body {
 	height: 3px;
 	margin: 3px;
 }
+.icon-exit-content{
+  display: none;
+  cursor: pointer;
+}
 .icon-exit-content i {
 	color: var(--white);
-	font-size: 1.5rem;
+	font-size: 1.7rem;
 }
 /* Animacion del menu al hacer click */
 .navbar-list {
@@ -83,6 +87,13 @@ body {
 .navbar-list-link:hover {
 	padding-left: 30px;
 	transition: 0.2s all;
+}
+.icon-exit{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 /* Animacion que cierra o muestra el menu  */
 .show-menu {
@@ -148,91 +159,48 @@ body {
 .section-projects-container {
 	min-height: 100vh;
 }
-/* .hero-container {
-	min-height: calc(100vh - 80px);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: var(--white);
-	flex-wrap: wrap;
+
+/* main, contiene las habilidades y los proyectos */
+.main-container{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-.hero-text-content {
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+.skills-container{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-.hero-text {
-	font-size: 2.5rem;
+.skills-title{
+  flex-basis: 100%;
+  color: var(--white);
+  font-family: var(--FontGeologica);
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
 }
-.hero-links-content {
-	display: flex;
-	gap: 40px;
+.skill-img{
+  width: 100px;
+  object-fit: cover;
 }
-.hero-link {
-	color: var(--blue);
-	font-size: 1.2rem;
-	font-weight: 600;
-	border: 1px solid #000;
-	padding: 0.6rem 2rem;
-	border-radius: 8px;
-  border: none;
+
+.projects-container{
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-.hero-links-content a:first-child {
-	background-color: var(--yellow);
+.projets-img{
+  width: 100%;
 }
-.hero-links-content a:first-child:hover {
-	background-color: var(--blue);
-	color: var(--white);
-	transition: all 0.2s;
-}
-.hero-links-content a:last-child:hover {
-	background-color: var(--yellow);
-	color: var(--dark);
-	transition: 0.2s all;
-}
-.aboutme-container {
-	flex-basis: 100%;
-	width: auto;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.aboutme-text {
-	padding: 30px 20px;
-	max-width: 60%;
-	text-align: center;
-	font-size: 1.3rem;
-	border-radius: 10px;
-	color: var(--white);
-} */
-/* Seccion de las habilidades */
-.skills-content {
-	width: 650px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 40px;
-	background-color: var(--white);
-	padding: 2rem;
-	border-radius: 1rem;
-}
-.skills-title {
-	text-align: center;
-	flex-basis: 100%;
-	font-size: 1.5rem;
-	/* color: var(--white); */
-}
-.skill-img-container {
-	display: inline-block;
-	padding: 20px;
-}
-.skill-img {
-	width: 100%;
-	height: 100px;
-	cursor: pointer;
-}
+
+
+
+
+
+
 @media screen and (min-width: 700px) {
 	.navbar-list {
 		height: auto;
@@ -269,4 +237,7 @@ body {
 		color: var(--blue);
 		transition: 0.2s color;
 	}
+  .icon-exit{
+    display: none !important;
+  }
 }
