@@ -50,6 +50,11 @@ body {
 	height: 3px;
 	margin: 3px;
 }
+.icon-exit-content i {
+	color: var(--white);
+	font-size: 1.5rem;
+}
+/* Animacion del menu al hacer click */
 .navbar-list {
 	width: 80%;
 	background-color: var(--white);
@@ -59,8 +64,9 @@ body {
 	left: 0;
 	display: flex;
 	flex-direction: column;
-	gap: 30px;
-	visibility: hidden;
+	justify-content: center;
+	align-items: center;
+	gap: 90px;
 	transform: translateX(-100%);
 	transition: 0.3s transform;
 	border-top-right-radius: 2rem;
@@ -70,37 +76,30 @@ body {
 .navbar-list-link {
 	position: relative;
 	font-weight: 600;
-	font-size: 1.2rem;
-	color: var(--white);
+	font-size: 1.3rem;
+	color: var(--darkPurple);
 	font-family: var(--FontGeologica);
 }
-.navbar-list-link::before {
-	position: absolute;
-	bottom: -5px;
-	content: "";
-	display: block;
-	width: 0;
-	height: 4px;
-	background-color: var(--yellow);
-	transition: all 0.3s;
-}
-.navbar-list-link:hover::before {
-	width: 100%;
-}
 .navbar-list-link:hover {
-	color: var(--blue);
-	transition: 0.2s color;
+	padding-left: 30px;
+	transition: 0.2s all;
 }
 /* Animacion que cierra o muestra el menu  */
 .show-menu {
-	visibility: visible;
 	transform: translateX(0%);
 	transition: 0.3s transform;
+}
+/* oculto */
+.hidden {
+	display: none;
+}
+/* Mostrar */
+.show {
+	display: block;
 }
 /* Hero */
 .hero-container {
 	height: calc(100vh - 80px);
-	overflow: hidden;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -108,6 +107,7 @@ body {
 	gap: 50px;
 }
 .hero-title {
+	text-align: center;
 	font-size: 3.5rem;
 	font-weight: 900;
 	font-family: var(--FontGeologica);
@@ -247,5 +247,26 @@ body {
 	}
 	.bars-menu-content {
 		display: none;
+	}
+	.navbar-list-link {
+		color: var(--white);
+	}
+	.navbar-list-link::before {
+		position: absolute;
+		bottom: -5px;
+		content: "";
+		display: block;
+		width: 0;
+		height: 4px;
+		background-color: var(--yellow);
+		transition: all 0.3s;
+	}
+	.navbar-list-link:hover::before {
+		width: 100%;
+	}
+	.navbar-list-link:hover {
+		padding: 0;
+		color: var(--blue);
+		transition: 0.2s color;
 	}
 }
