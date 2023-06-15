@@ -14,6 +14,8 @@
 	--yellow: #fbd04d;
 	--orange: #fa7921;
 	--black: #002500;
+	--colorLinkedin: #0e76a8;
+	--colorGit: #171515;
 	--FontOpenSans: "Open Sans", sans-serif;
 	--FontGeologica: "Geologica", sans-serif;
 	--max: 1024px;
@@ -50,9 +52,9 @@ body {
 	height: 3px;
 	margin: 3px;
 }
-.icon-exit-content{
-  display: none;
-  cursor: pointer;
+.icon-exit-content {
+	display: none;
+	cursor: pointer;
 }
 .icon-exit-content i {
 	color: var(--white);
@@ -88,12 +90,12 @@ body {
 	padding-left: 30px;
 	transition: 0.2s all;
 }
-.icon-exit{
-  position: absolute;
-  top: 50px;
-  right: 50px;
-  font-size: 2rem;
-  cursor: pointer;
+.icon-exit {
+	position: absolute;
+	top: 50px;
+	right: 50px;
+	font-size: 2rem;
+	cursor: pointer;
 }
 /* Animacion que cierra o muestra el menu  */
 .show-menu {
@@ -161,46 +163,86 @@ body {
 }
 
 /* main, contiene las habilidades y los proyectos */
-.main-container{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.main-container {
+	min-height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
 }
-.skills-container{
-  display: flex;
-  justify-content: center;
-  align-items:center ;
-  gap: 20px;
-  flex-wrap: wrap;
+.skills-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
-.skills-title{
-  flex-basis: 100%;
-  color: var(--white);
-  font-family: var(--FontGeologica);
-  font-size: 2rem;
-  text-align: center;
-  margin: 20px auto;
+.skills-title {
+	flex-basis: 100%;
+	color: var(--white);
+	font-family: var(--FontGeologica);
+	font-size: 2rem;
+	text-align: center;
+	margin: 20px auto;
 }
-.skill-img{
-  width: 100px;
-  object-fit: cover;
-}
-
-.projects-container{
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-.projets-img{
-  width: 100%;
+.skill-img {
+	width: 100px;
+	object-fit: cover;
 }
 
+.projects-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 15px;
+}
+.projets-content {
+	display: inline;
+	width: 200px;
+	height: 200px;
+	cursor: pointer;
+}
+.projets-img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	object-fit: cover;
+}
 
-
-
-
-
+/* FOOTER */
+.footer-container {
+	padding: 0 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.aboutme-title {
+	color: var(--white);
+	font-family: var(--FontGeologica);
+}
+.aboutme-text {
+	color: var(--white);
+	font-family: var(--FontOpenSans);
+	text-align: center;
+}
+.socials-media-content {
+	display: flex;
+	gap: 30px;
+}
+.socials-media-content i {
+	font-size: 2rem;
+}
+.icon-linkedin {
+	color: var(--colorLinkedin);
+}
+.icon-github {
+	color: var(--white);
+}
+.icon-email {
+	color: var(--white);
+}
 @media screen and (min-width: 700px) {
 	.navbar-list {
 		height: auto;
@@ -237,7 +279,7 @@ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 		color: var(--blue);
 		transition: 0.2s color;
 	}
-  .icon-exit{
-    display: none !important;
-  }
+	.icon-exit {
+		display: none !important;
+	}
 }
