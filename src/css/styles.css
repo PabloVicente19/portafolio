@@ -212,7 +212,6 @@ body {
 }
 .projets-text {
 	width: 100%;
-	/* height: 50px; */
 	background-color: var(--blue);
 	text-align: center;
 	position: absolute;
