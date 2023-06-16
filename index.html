@@ -16,11 +16,20 @@
   <header class="header-container">
     <nav class="navbar-content">
       <h2 class="navbar-logo">PV</h2>
+      <!-- Menu Hamburguesa -->
+      <div class="bars-menu-content">
+        <span class="bars-menu"></span>
+        <span class="bars-menu"></span>
+        <span class="bars-menu"></span>
+      </div>
+
       <ul class="navbar-list">
         <li><a href="#" class="navbar-list-link">Home</a></li>
-        <li><a href="#" class="navbar-list-link">Habilidades</a></li>
+        <li><a href="#skills" class="navbar-list-link">Habilidades</a></li>
         <li><a href="#projects" class="navbar-list-link">Proyectos</a></li>
-        <li><a href="#" class="navbar-list-link">Contacto</a></li>
+        <li><a href="#contact" class="navbar-list-link">Contacto</a></li>
+        <li><i class="fa-solid fa-xmark icon-exit"></i> </li>
+
       </ul>
     </nav>
     <section class="hero-container">
@@ -28,67 +37,74 @@
       <span class="hero-prof">Desarollador Web</span>
       <div class="hero-btns-container">
         <a href="#projects" class="hero-btn">Ver Proyectos</a>
-        <a href="#" class="hero-btn">Sobre Mí</a>
+        <a href="#contact" class="hero-btn">Sobre Mí</a>
       </div>
-
-      <!-- <div class="hero-text-content">
-        <p class="hero-text">
-          Hola, soy <span class="hero-text-name">Pablo Vicente</span>.
-        </p>
-        <h1 class="hero-text-title">Desarollador web trainee.</h1>
-        <div class="hero-links-content">
-          <a href="#" class="hero-link">Ver Proyectos</a>
-          <a href="#" class="hero-link">Habilidades</a>
-        </div>
-      </div> -->
-      <!-- <div class="aboutme-container">
-        <p class="aboutme-text">
-          Soy estudiante de programación en la Universidad Abierta Interamericana. Tambien, como complemento estoy
-          estudiando en un bootcamp programacion web full stack.
-        </p>
-
-      </div> -->
-    </section>
   </header>
-  <section class="section-projects-container" id="projects">
+  <main class="main-container">
 
-  </section>
-  <!-- <main class="main-container">
-    <section class="skills-content">
+    <section class="skills-container" id="skills">
       <h2 class="skills-title">Mis Habilidades</h2>
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-html.png" alt="Logo-html">
+      <img src="./src/images/logo-html.png" alt="HTML" class="skill-img">
+      <img src="./src/images/logo-css.png" alt="CSS" class="skill-img">
+      <img src="./src/images/logo-js.png" alt="JAVASCRIPT" class="skill-img">
+      <img src="./src/images/logo-react.png" alt="REACT" class="skill-img">
+    </section>
+    <!-- Seccion de proyectos -->
+    <section class="projects-container" id="projects">
+      <div class="projets-content">
+        <img src="./src/images/projetcs/card-component.png" alt="proyecto" class="projets-img">
+        <div class="projets-text">
+          <a href="https://card-component-html-css.vercel.app/" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="projets-content">
+        <img src="./src/images/projetcs/supliflix.png" alt="proyecto" class="projets-img">
+        <div class="projets-text">
+          <a href="https://integrador-nucba-jet.vercel.app/" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="projets-content">
+        <img src="./src/images/projetcs/pokedex.PNG" alt="proyecto" class="projets-img">
+        <div class="projets-text">
+          <a href="https://pokedex-pablo-vicente.vercel.app/" target="_blank">Ver Proyecto</a>
+        </div>
+      </div>
+      <div class="projets-content">
+        <img src="./src/images/projetcs/colors.PNG" alt="proyecto" class="projets-img">
+        <div class="projets-text">
+          <a href="https://pablovicente19.github.io/Colors/" target="_blank">Ver Proyecto</a>
+        </div>
       </div>
 
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-css.png" alt="logo-css">
-      </div>
-
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-js.png" alt="logo-js">
-      </div>
-
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-react.png" alt="logo-react">
-      </div>
-
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-bootstrap.png" alt="logo-bootstrap">
-      </div>
-
-      <div class="skill-img-container">
-        <img class="skill-img" src="./src/images/logo-tailwind.png" alt="logo-tailwind">
+      <div class="projets-content">
+        <img src="./src/images/projetcs/colors.PNG" alt="proyecto" class="projets-img">
+        <div class="projets-text">
+          <a href="https://pablovicente19.github.io/Colors/" target="_blank">Ver Proyecto</a>
+        </div>
       </div>
     </section>
-    <section class="projects-container">
-      <h2 class="projects-title">Mis Proyectos</h2>
-      <div class="projects-btns-contaniner">
-        <button class="project-btn">HTML / CSS</button>
-        <button class="project-btn">Javascript</button>
-        <button class="project-btn">React</button>
-      </div>
-    </section>
-  </main> -->
+  </main>
+  <footer class="footer-container" id="contact">
+    <div class="aboutme-content">
+      <h2 class="aboutme-title">Sobre Mí</h2>
+      <p class="aboutme-text">Comencé a estudiar de manera autodidacta desarrollo web. A comienzos de 2021, luego decidí
+        avanzar con un plan de
+        estudios, por eso me inscribí en un bootcamp de programación fullstack. Además, en paralelo, estoy estudiando en
+        la
+        Universidad Abierta Interamericana la carrera de ingeniería en computación.</p>
+    </div>
+    <div class="socials-media-content">
+      <a href="https://www.linkedin.com/in/pablo-martin-vicente/" target="_blank">
+        <i class="fa-brands fa-linkedin icon-linkedin"></i>
+      </a>
+      <a href="https://github.com/PabloVicente19" target="_blank">
+        <i class="fa-brands fa-github icon-github"></i>
+      </a>
+      <a href="https://pablovicente19@hotmail.com" target="_blank">
+        <i class="fa-solid fa-envelope icon-email"></i>
+      </a>
+    </div>
+  </footer>
   <script src="./src/js/index.js"></script>
 </body>
 
