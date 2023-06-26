@@ -26,8 +26,159 @@ body {
 	margin: 0 auto;
 	background-color: var(--black);
 }
-
 .navbar-content {
+	padding: 0 10px;
+	position: relative;
+	min-height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar-logo {
+	color: var(--white);
+	font-family: var(--FontGeologica);
+}
+/* Menu Hamburguesa */
+.bars-menu-content {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	cursor: pointer;
+}
+.bars-menu {
+	width: 30px;
+	height: 4px;
+	background-color: var(--white);
+}
+.navbar-list {
+	position: relative;
+	width: 80%;
+	margin: 0 auto;
+	height: calc(100vh - 50px);
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5rem;
+	background-color: var(--white);
+	border-top-right-radius: 1rem;
+	border-end-end-radius: 1rem;
+	transform: translateX(-100%);
+	transition: 0.2s transform;
+}
+.navbar-list-link {
+	color: var(--blue);
+	font-size: 1rem;
+	font-family: var(--FontOpenSans);
+	font-weight: bold;
+}
+.navbar-list-link:hover {
+	padding-left: 20px;
+	transition: 0.2s padding;
+}
+.icon-exit {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 1.5rem;
+}
+.show-menu {
+	transform: translateX(0%);
+}
+
+/* HERO */
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: calc(100vh - 50px);
+}
+.hero-title {
+	text-align: center;
+	font-size: 2rem;
+	color: var(--white);
+	font-family: var(--FontGeologica);
+}
+.hero-prof {
+	font-size: 1.8rem;
+	font-family: var(--FontGeologica);
+	background: #27c9cf;
+	background: linear-gradient(to left, #0b6989 7%, #00ff00 36%, #fbd04d 95%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.hero-btns-container {
+	margin-top: 20px;
+	display: flex;
+	gap: 1rem;
+}
+.hero-btn {
+	color: var(--white);
+	font-family: var(--FontOpenSans);
+	background-color: var(--blue);
+	padding: 0.5rem 1rem;
+	border-radius: 8px;
+	font-weight: bold;
+}
+/* MAIN */
+.main-container {
+	min-height: 100vh;
+}
+/* Seccion de habilidades */
+.skills-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.skills-title {
+	flex-basis: 100%;
+	text-align: center;
+	color: var(--white);
+	font-family: var(--FontGeologica);
+}
+.skill-img-container {
+	margin: 10px auto;
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+}
+.skill-img {
+	width: 100%;
+	object-fit: cover;
+}
+.skill-name {
+	color: var(--white);
+	font-family: var(--FontOpenSans);
+	font-weight: bold;
+	font-size: 13px;
+}
+/*Seccion de  Proyectos */
+.projects-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+}
+.project-content {
+	display: block;
+	width: 150px;
+	height: 150px;
+	/* background-image: url("../images/projetcs/pokedex.PNG"); */
+	background-size: cover;
+	background-position: center;
+}
+.projet-img {
+	width: 100%;
+	object-fit: cover;
+}
+/* .navbar-content {
 	position: relative;
 	height: 80px;
 	display: flex;
@@ -59,8 +210,8 @@ body {
 .icon-exit-content i {
 	color: var(--white);
 	font-size: 1.7rem;
-}
-/* Animacion del menu al hacer click */
+} */
+/* Animacion del menu al hacer click 
 .navbar-list {
 	width: 80%;
 	background-color: var(--white);
@@ -97,20 +248,13 @@ body {
 	font-size: 2rem;
 	cursor: pointer;
 }
-/* Animacion que cierra o muestra el menu  */
+/* Animacion que cierra o muestra el menu  
 .show-menu {
 	transform: translateX(0%);
 	transition: 0.3s transform;
 }
-/* oculto */
-.hidden {
-	display: none;
-}
-/* Mostrar */
-.show {
-	display: block;
-}
-/* Hero */
+
+/* Hero 
 .hero-container {
 	height: calc(100vh - 80px);
 	display: flex;
@@ -157,12 +301,12 @@ body {
 	transition: 0.3s background;
 }
 
-/* Seccion de proyectos */
+/* Seccion de proyectos 
 .section-projects-container {
 	min-height: 100vh;
 }
 
-/* main, contiene las habilidades y los proyectos */
+/* main, contiene las habilidades y los proyectos 
 .main-container {
 	min-height: 100vh;
 	display: flex;
@@ -228,7 +372,7 @@ body {
 	font-family: var(--FontOpenSans);
 }
 
-/* FOOTER */
+/* FOOTER 
 .footer-container {
 	padding: 0 10px;
 	display: flex;
@@ -267,7 +411,7 @@ body {
 .icon-email {
 	color: var(--white);
 }
-/* MOVILE */
+/* MOVILE 
 @media screen and (max-width: 445px) {
 	.hero-title {
 		font-size: 2rem;
@@ -293,7 +437,7 @@ body {
 		height: 150px;
 	}
 }
-/* TABLET & desktop */
+/* TABLET & desktop 
 @media screen and (min-width: 700px) {
 	.navbar-list {
 		height: auto;
@@ -337,3 +481,4 @@ body {
 		width: 50%;
 	}
 }
+*/
