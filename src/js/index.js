@@ -15,8 +15,8 @@ const createCard = (arr) => {
 	const { name, image, link } = arr;
 	//<img src=${image} alt=${name} class="projets-img">
 	return `
-	
-  <div class="project-content" style=background-color:"white";>
+  <div class="project-content" 
+        style="background-image:url(${image})">
    <div class="projets-text">
       <a href=${link} target="_blank">Ver Proyecto</a>
     </div>
