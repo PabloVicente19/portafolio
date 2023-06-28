@@ -26,85 +26,68 @@
       <ul class="navbar-list">
         <li><a href="#" class="navbar-list-link">Home</a></li>
         <li><a href="#skills" class="navbar-list-link">Habilidades</a></li>
-        <li><a href="#projects" class="navbar-list-link">Proyectos</a></li>
+        <li><a href="#project" class="navbar-list-link">Proyectos</a></li>
         <li><a href="#contact" class="navbar-list-link">Contacto</a></li>
         <li><i class="fa-solid fa-xmark icon-exit"></i> </li>
-
       </ul>
     </nav>
     <section class="hero-container">
       <span class="hero-title">Hola, Soy Pablo Vicente</span>
-      <span class="hero-prof">Desarollador Web</span>
+      <h2 class="hero-prof">Desarollador Web</h2>
       <div class="hero-btns-container">
-        <a href="#projects" class="hero-btn">Ver Proyectos</a>
+        <a href="#projects" class="hero-btn">Proyectos</a>
         <a href="#contact" class="hero-btn">Sobre Mí</a>
       </div>
+    </section>
   </header>
   <main class="main-container">
-
     <section class="skills-container" id="skills">
       <h2 class="skills-title">Mis Habilidades</h2>
-      <img src="./src/images/logo-html.png" alt="HTML" class="skill-img">
-      <img src="./src/images/logo-css.png" alt="CSS" class="skill-img">
-      <img src="./src/images/logo-js.png" alt="JAVASCRIPT" class="skill-img">
-      <img src="./src/images/logo-react.png" alt="REACT" class="skill-img">
+      <div class="skill-img-container">
+        <img src="./src/images/logo-html.png" alt="" class="skill-img">
+        <span class="skill-name">HTML</span>
+      </div>
+      <div class="skill-img-container">
+        <img src="./src/images/logo-css.png" alt="" class="skill-img">
+        <span class="skill-name">CSS</span>
+      </div>
+      <div class="skill-img-container">
+        <img src="./src/images/logo-js.png" alt="" class="skill-img">
+        <span class="skill-name">JS</span>
+      </div>
+      <div class="skill-img-container">
+        <img src="./src/images/logo-react.png" alt="" class="skill-img">
+        <span class="skill-name">ReactJs</span>
+      </div>
+      <div class="skill-img-container">
+        <img src="./src/images/logo-bootstrap.png" alt="" class="skill-img">
+        <span class="skill-name">Bootstrap</span>
+      </div>
+      <div class="skill-img-container">
+        <img src="./src/images/git.png" alt="" class="skill-img">
+        <span class="skill-name">Git</span>
+      </div>
     </section>
-    <!-- Seccion de proyectos -->
-    <section class="projects-container" id="projects">
-      <div class="projets-content">
-        <img src="./src/images/projetcs/card-component.png" alt="proyecto" class="projets-img">
-        <div class="projets-text">
-          <a href="https://card-component-html-css.vercel.app/" target="_blank">Ver Proyecto</a>
-        </div>
-      </div>
-      <div class="projets-content">
-        <img src="./src/images/projetcs/supliflix.png" alt="proyecto" class="projets-img">
-        <div class="projets-text">
-          <a href="https://integrador-nucba-jet.vercel.app/" target="_blank">Ver Proyecto</a>
-        </div>
-      </div>
-      <div class="projets-content">
-        <img src="./src/images/projetcs/pokedex.PNG" alt="proyecto" class="projets-img">
-        <div class="projets-text">
-          <a href="https://pokedex-pablo-vicente.vercel.app/" target="_blank">Ver Proyecto</a>
-        </div>
-      </div>
-      <div class="projets-content">
-        <img src="./src/images/projetcs/colors.PNG" alt="proyecto" class="projets-img">
-        <div class="projets-text">
-          <a href="https://pablovicente19.github.io/Colors/" target="_blank">Ver Proyecto</a>
-        </div>
-      </div>
-
-      <div class="projets-content">
-        <img src="./src/images/projetcs/colors.PNG" alt="proyecto" class="projets-img">
-        <div class="projets-text">
-          <a href="https://pablovicente19.github.io/Colors/" target="_blank">Ver Proyecto</a>
-        </div>
-      </div>
+    <section class="projects-container" id="project">
+      <h2 class="projects-title">Proyectos</h2>
     </section>
   </main>
   <footer class="footer-container" id="contact">
-    <div class="aboutme-content">
-      <h2 class="aboutme-title">Sobre Mí</h2>
-      <p class="aboutme-text">Comencé a estudiar de manera autodidacta desarrollo web. A comienzos de 2021, luego decidí
-        avanzar con un plan de
-        estudios, por eso me inscribí en un bootcamp de programación fullstack. Además, en paralelo, estoy estudiando en
-        la
-        Universidad Abierta Interamericana la carrera de ingeniería en computación.</p>
-    </div>
-    <div class="socials-media-content">
-      <a href="https://www.linkedin.com/in/pablo-martin-vicente/" target="_blank">
+    <h2 class="aboutme-title">Sobre Mi</h2>
+    <p class="aboutme-text">Comencé a estudiar de manera autodidacta desarrollo web. A comienzos de 2021, luego decidí avanzar con un plan de estudios, por eso me inscribí en un bootcamp de programación fullstack. Además, en paralelo, estoy estudiando en la Universidad Abierta Interamericana la carrera de ingeniería en computación.</p>
+    <div class="socialsmedia-container">
+      <a href="https://www.linkedin.com/in/pablo-martin-vicente/"> 
         <i class="fa-brands fa-linkedin icon-linkedin"></i>
       </a>
-      <a href="https://github.com/PabloVicente19" target="_blank">
+      <a href="https://github.com/PabloVicente19">
         <i class="fa-brands fa-github icon-github"></i>
       </a>
-      <a href="https://pablovicente19@hotmail.com" target="_blank">
+      <a href="https://pablovicente19@hotmail.com">
         <i class="fa-solid fa-envelope icon-email"></i>
       </a>
     </div>
   </footer>
+  <script src="./src/js/request.js"></script>
   <script src="./src/js/index.js"></script>
 </body>
 
