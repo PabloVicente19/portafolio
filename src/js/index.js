@@ -25,7 +25,7 @@ const createCard = (arr) => {
 };
 // Renderizo las cards en el contenedo html
 const renderCards = (container) => {
-	return (container.innerHTML = projects.map(createCard).join(""));
+	return (container.innerHTML += projects.map(createCard).join(""));
 };
 
 const init = () => {
